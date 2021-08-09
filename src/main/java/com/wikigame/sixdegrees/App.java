@@ -128,7 +128,7 @@ public class App
 				if (link.getInt("ns") == 0 && link.has("exists")) {
 					String tag = link.get("*").toString();
 					if (!visited.contains(tag)) {
-						paths.offer(new Node(tag, path.deg + 1, path));
+						paths.offer(new Node(tag, path));
 						visited.add(tag);
 					}
 				}
